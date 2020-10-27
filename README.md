@@ -14,3 +14,4 @@ springboot提供的项目监控工具,提供了多种项目的监控数据,hystr
 					include:	* --暴露所有监控
 3. http://xxxxxxxxxxxx/actuator
 
+### fhal
