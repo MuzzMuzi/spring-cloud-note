@@ -3,20 +3,7 @@
 
 
 markdown note during learning spring cloud
-test url:
-监控端口:http://localhost:3001/actuator/hystrix.stream
 
-http://localhost:3001/item-service/34
-
-http://localhost:3001/item-service/decreaseNumber
-
-http://localhost:3001/user-service/10068/
-
-http://localhost:3001/user-service/10068/score?score=1000
-
-http://localhost:3001/order-service/45
-
-http://localhost:3001/order-service/45
 
 ## Ribbon
 ribbon 提供了负载均衡和重试功能, 它底层是使用 RestTemplate 进行 Rest api 调用
@@ -32,11 +19,11 @@ springboot提供的项目监控工具,提供了多种项目的监控数据,hystr
 #### 添加actuator
 1. 添加actuator依赖
 2. yml配置暴露监控信息
-  management:
-  	endpoints:
-  		web:
-  			exposure:
-  				include:	* --暴露所有监控
+    management:
+    	endpoints:
+    		web:
+    			exposure:
+    				include:	* --暴露所有监控
 3. http://xxxxxxxxxxxx/actuator
 
 
@@ -89,6 +76,14 @@ public interface ItemFeignClient(){
 		...
 }
 ```
+
+#### Zuul 集成Ribbon
+
+zuul不推荐启用重试,默认支持负载均衡,没有重试
+
+要想启用重试,得添加`spring-retry`依赖
+
+zuul.retryable=true
 
 
 
