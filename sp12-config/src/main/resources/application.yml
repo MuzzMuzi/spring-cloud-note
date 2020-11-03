@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri:  https://gitee.com/muzzmuzi/springcloud
+          search-paths: /config
+  application:
+    name: config-server
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
+server:
+  port: 6001
