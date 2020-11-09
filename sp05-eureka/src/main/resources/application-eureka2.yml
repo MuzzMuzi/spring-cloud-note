@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 #profile: --spring.profiles.active=eureka2
+=======
+#激活当前profile: --spring.profiles.active=eureka2
+>>>>>>> e253625947c571e950e71b8a2eedc992356e6993
 eureka:
   instance:
     hostname: eureka2

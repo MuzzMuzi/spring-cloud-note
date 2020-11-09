@@ -1,14 +1,21 @@
 spring:
+<<<<<<< HEAD
   rabbitmq:
     host: 192.168.64.140
     port: 5672
     username: admin
     password: admin
+=======
+>>>>>>> e253625947c571e950e71b8a2eedc992356e6993
   cloud:
     config:
       server:
         git:
+<<<<<<< HEAD
           uri: https://gitee.com/muzzmuzi/springcloud
+=======
+          uri:  https://gitee.com/muzzmuzi/springcloud
+>>>>>>> e253625947c571e950e71b8a2eedc992356e6993
           search-paths: /config
   application:
     name: config-server
@@ -17,9 +24,13 @@ eureka:
     service-url:
       defaultZone: http://eureka1:2001/eureka,http://eureka2:2002/eureka
 server:
+<<<<<<< HEAD
   port: 6001
 management:
   endpoints:
     web:
       exposure:
         include: bus-refresh
+=======
+  port: 6001
+>>>>>>> e253625947c571e950e71b8a2eedc992356e6993
