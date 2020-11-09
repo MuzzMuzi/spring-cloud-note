@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+#profile: --spring.profiles.active=eureka1 --server.port=2001
+=======
+#激活当前profile: --spring.profiles.active=eureka1 --server.port=2001
+>>>>>>> e253625947c571e950e71b8a2eedc992356e6993
+eureka:
+  instance:
+    hostname: eureka1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone:  http://eureka2:2002/eureka
